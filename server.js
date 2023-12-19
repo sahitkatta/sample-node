@@ -86,7 +86,7 @@ const root = {
 const app = express();
 
 // Use GraphQL middleware
-app.use('/graphql', graphqlHTTP({
+app.use('/', graphqlHTTP({
   schema,
   rootValue: root,
   graphiql: true, // Enable GraphiQL interface
