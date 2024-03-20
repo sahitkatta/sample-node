@@ -82,8 +82,10 @@ const root = {
   },
 };
 
-// Create Express server
+// Create Express server: with variable name app
 const app = express();
+
+const nikhil_code = "Some code"
 
 // Use GraphQL middleware
 app.use('/', graphqlHTTP({
